@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f58178813e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="editor">
+            <nav>
+            <img src="logonewedited.jpg" alt="wait :)" class="logo">
+            <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#socials">Social Handles</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="tagline">
+                <h1>Hola, amigo</h1>
+                <p id="text1">I'm <span>Amrita Varshini</span>, An Undergrad student </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutme">
+        <div class="editor">
+        <div class="part1">
+        <div class="col1">
+            <h2 class="title1">About Me</h2>
+            <p>I'm Amrita, an enthusiastic undergraduate engineering student with a deep passion for coding. 
+               Known for my aptitude as a fast learner, I thrive on embracing new challenges in the ever-evolving 
+               world of technology. Beyond my academic pursuits, I take pride in being a dependable friend, always 
+               ready to support and connect with others. </p>
+               <div class="edutotal">
+                <p class="edu">Education</p>
+                <ul>
+                    <li>Matriculation: 91.6% in CBSE(2020)</li><br>
+                    <li>Higher Secondary: 91.67% in CHSE(2022)</li><br>
+                    <li>Graduation: BTech in Information Technology(2022-2026)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col2">
+            <img src="dp.jpg" alt="Loading.....">
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="resume">
+        <p>Click <a href="resume.amrita.pdf" target="_blank">here</a> to view my resume</p>
+    </div>
+    <div id="socials">
+        <div class="editor">
+        <div class="part2">
+        <h1>Social Handles <br></h1>
+        <div id="first2">
+        <a href="https://www.linkedin.com/in/a-amrita-varshini-ab4034264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="LinkedIn_logo.png" alt="..." class="linkedin"></a>
+        <a href="https://leetcode.com/amrita_786" target="_blank"><img src="leetcode_logo.png" alt="..." class="leetcode"></a>
+        </div>
+        <div id="second2">
+        <a href="https://codeforces.com/profile/amrita764" target="_blank"><img src="codeforces_logo.png" alt="..." class="codeforces"></a>
+        <a href="https://www.codechef.com/users/amrita310119" target="_blank"><img src="codechef_logo.jpg" alt="..." class="codechef"></a>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1>CONTACTS</h1>
+        <p>Gmail: amrita.chinni2005@gmail.com</p>
+        <p>Phone: 1234567890</p>
+    </div>
+    
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

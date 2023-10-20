@@ -1,0 +1,320 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #020202;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(backgrnew.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.editor{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: fixed;
+}
+
+.logo{
+      width: 100px;
+}
+ul li{
+    margin:15px 25px;
+    display: inline-block;
+    text-align: right;
+}
+
+ul li a{
+    text-decoration: none;
+    color: honeydew;
+    font-family:monospace;
+    font-size: 20px;
+    position: relative;
+    font-size: 22px;
+}
+
+ul li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    background: #45c6f2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+
+#tagline h1{
+    font-family: cursive;
+    color: #fff;
+    font-size: 75px;
+    margin-top: 18%;
+}
+
+#tagline p{
+    color: #fff;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+#tagline p span{
+    color: #e01212;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+#aboutme{
+    padding: 40px;
+    color: #abababbd;
+}
+
+.part1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col2{
+    flex-basis: 40%;
+}
+
+.col2 img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.col1{
+    flex-basis: 60%;
+}
+
+.col1 p{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.title1{
+    font-size: 35px;
+}
+
+.edutotal{
+    font-weight: 300;
+    margin: 20px 0 40px;
+    font-family: monospace;
+}
+
+.edutotal .edu{
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+.edutotal ul li{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#socials{
+    padding: 40px;
+    color: #abababbd;
+    margin: 10%;
+}
+
+.part1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#socials h1{
+    font-size: 35px;
+    font-family: monospace;
+}
+
+#socials p{
+    font-size: 25px;
+    font-family: monospace;
+}
+
+#socials p a{
+    text-decoration: none;
+    color: #45c6f2;
+    font-family: math;
+}
+
+.part2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.first2{
+    flex-basis: 50%;
+}
+
+.second2{
+    flex-basis: 50%;
+}
+
+.linkedin{
+    width: 34%;
+    border-radius: 50px;
+}
+.codeforces{
+    width: 45%;
+    border-radius: 50px;
+}
+.codechef{
+    width: 45%;
+    border-radius: 50px;
+}
+.leetcode{
+    width: 34%;
+    border-radius: 50px;
+}
+
+#resume{
+    font-size: 30px;
+    padding: 40px;
+    margin: 1% 10%;
+}
+
+#resume p{
+    color: #abababbd;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+#resume p a{
+    color: #0901e7;
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+#contact{
+    font-size: 20px;
+    padding: 40px;
+    margin: 1% 10%;
+    color: #abababbd;
+}
+
+#contact h1{
+    font-size: 30px;
+    font-family: monospace;
+}
+
+#contact p{
+    font-family: monospace;
+}
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 100px;
+    }
+    nav{
+        position: relative;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    #aboutme{
+        padding: 3% 5%;
+    }
+    .col1 .col2{
+        flex-basis: 100%;
+    }
+    .col2 img{
+        border-radius: 5px;
+        width: 300px;
+    }
+    .col1 p{
+        font-size: 20px;
+    }
+    #socials h1{
+        font-size: 35px;
+    }
+    .first2{
+        flex-basis: 100%;
+    }
+    .second2{
+        flex-basis: 100%;
+    }
+    .linkedin{
+        border-radius: 5px;
+        width: 49%;
+    }
+    .codeforces{
+        border-radius: 5px;
+        width: 48%;
+    }
+    .codechef{
+        border-radius: 5px;
+        width: 48%;
+    }
+    .leetcode{
+        border-radius: 5px;
+        width: 48%;
+    }
+    #socials{
+        margin: 40% 5%;
+        padding: 1%;
+    }
+    #resume{
+        margin: 40% 5%;
+        padding: 10%;
+    }
+    .edutotal ul li{
+        font-size: 15px;
+        list-style: circle;
+    }
+    #contact h1{
+        font-size: 35px;
+        color: #abababbd;
+    }
+}
